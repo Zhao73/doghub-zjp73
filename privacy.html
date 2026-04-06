@@ -1,72 +1,79 @@
-<!DOCTYPE html>
-<html lang="en" data-lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy Policy - Breeder Note</title>
-  <link href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="">
-  <style>
-    .privacy-page { max-width: 700px; margin: 0 auto; padding: 80px 20px 40px; }
-    .privacy-page h1 { color: var(--neon-yellow); font-size: 18px; text-align: center; margin-bottom: 24px; }
-    .privacy-page h2 { color: var(--text-accent); font-size: 12px; margin: 24px 0 12px; }
-    .privacy-page p, .privacy-page li { font-size: 9px; line-height: 2.2; color: #ccc; }
-    .privacy-page ul { padding-left: 20px; list-style: none; }
-    .privacy-page ul li::before { content: '> '; color: var(--neon-green); }
-    .back-link { display: inline-block; margin-bottom: 24px; color: var(--text-accent); text-decoration: none; font-size: 10px; }
-    .back-link:hover { text-shadow: 0 0 8px var(--text-accent); }
-    .update-date { text-align: center; font-size: 8px; color: #888; margin-bottom: 24px; }
-  </style>
-</head>
-<body>
-  <div id="stars-bg"></div>
-  <div class="privacy-page">
-    <a href="index.html" class="back-link">&lt; Back to Breeder Note</a>
-    <h1>Privacy Policy - Breeder Note</h1>
-    <p class="update-date">Last updated: April 2026</p>
-    <div class="nes-container is-dark">
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>プライバシーポリシー | ブリーダー手帳</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 40px 20px;
+        font-family: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+        background: #f7f3ee;
+        color: #111827;
+        line-height: 1.85;
+      }
+      main {
+        max-width: 860px;
+        margin: 0 auto;
+        background: #fff;
+        border-radius: 16px;
+        padding: 32px;
+        box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+      }
+      h1 { margin-top: 0; }
+      h2 { margin-top: 28px; font-size: 18px; }
+      .meta { color: #6b7280; font-size: 14px; }
+      a { color: #1f7a5a; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p><a href="index.html">← トップへ戻る</a></p>
+      <h1>プライバシーポリシー</h1>
+      <p class="meta">最終更新日: 2026-04-06</p>
 
-      <h2>1. Introduction</h2>
-      <p>ZJP ("we", "our", "us") operates the Breeder Note mobile application. This Privacy Policy explains how we collect, use, and protect your information.</p>
+      <p>ブリーダー手帳（以下「本サービス」）は、ユーザー情報を適切に取り扱うため、本ポリシーを定めます。</p>
 
-      <h2>2. Information We Collect</h2>
+      <h2>1. 取得する情報</h2>
       <ul>
-        <li>Kennel and dog profile data (stored locally and in Firebase/iCloud)</li>
-        <li>Voice recordings for transcription (processed via AI, not stored permanently)</li>
-        <li>Staff scheduling and operational data</li>
-        <li>Anonymous usage analytics and crash reports</li>
+        <li>アカウント情報（メールアドレス、表示名、ユーザーID等）</li>
+        <li>犬舎運営データ（犬、子犬、健康、繁殖、在庫、シフト、販売、顧客等）</li>
+        <li>画像データ（犬の写真、添付書類等）</li>
+        <li>AI 機能利用時の入力内容（テキスト、音声、画像、添付ファイル）</li>
+        <li>クラッシュログ、利用状況、端末情報</li>
+        <li>サブスクリプション状態に関する情報</li>
       </ul>
 
-      <h2>3. Voice Data</h2>
-      <p>Voice-to-record features use AI transcription. Audio is processed in real-time and is not stored on our servers after transcription is complete.</p>
-
-      <h2>4. Data Storage</h2>
+      <h2>2. 利用目的</h2>
       <ul>
-        <li>Data is stored locally on your device with offline-first architecture</li>
-        <li>Cloud sync via Firebase and/or iCloud when connected</li>
-        <li>Multi-tenant data is isolated per kennel organization</li>
+        <li>本サービスの提供、改善、保守のため</li>
+        <li>ユーザー認証、不正利用防止、権限管理のため</li>
+        <li>問い合わせ対応、サポート対応のため</li>
+        <li>課金・契約管理のため</li>
+        <li>AI 機能による要約、検索、回答生成、入力補助のため</li>
       </ul>
 
-      <h2>5. Third-Party Services</h2>
+      <h2>3. 外部サービス</h2>
+      <p>本サービスは以下の外部サービスを利用する場合があります。</p>
       <ul>
-        <li>Firebase (authentication, database, storage)</li>
-        <li>Google AI (voice transcription)</li>
-        <li>Apple iCloud (backup)</li>
+        <li>Firebase（認証、データ保存、ファイル保存）</li>
+        <li>RevenueCat（サブスクリプション管理）</li>
+        <li>Google Gemini 等の AI サービス（AI 応答、要約、音声補助）</li>
+        <li>Apple App Store（決済）</li>
       </ul>
 
-      <h2>6. Data Security</h2>
-      <p>We implement role-based access control. Admin and employee accounts have separate permission levels. All data in transit is encrypted.</p>
+      <h2>4. 第三者提供</h2>
+      <p>法令で認められる場合を除き、本人の同意なく個人情報を第三者へ提供しません。</p>
 
-      <h2>7. Children's Privacy</h2>
-      <p>This app is designed for professional kennel operators. We do not knowingly collect information from children under 13.</p>
+      <h2>5. データの保存と削除</h2>
+      <p>取得した情報は、利用目的の達成に必要な期間保存します。法令または正当な依頼に基づき、削除または匿名化を行う場合があります。</p>
 
-      <h2>8. Contact Us</h2>
-      <p>For privacy inquiries: <span style="color: var(--text-accent);">zjp@zjp73.com</span></p>
+      <h2>6. 安全管理</h2>
+      <p>不正アクセス、漏えい、改ざん、滅失等を防止するため、必要かつ適切な安全管理措置を講じます。</p>
 
-    </div>
-  </div>
-  <script src="https://unpkg.com/cursor-effects@latest/dist/browser.js"></script>
-  <script src="../js/main.js"></script>
-</body>
+      <h2>7. お問い合わせ</h2>
+      <p>プライバシーに関するお問い合わせ先: <a href="mailto:support@doghub.app">support@doghub.app</a></p>
+    </main>
+  </body>
 </html>
