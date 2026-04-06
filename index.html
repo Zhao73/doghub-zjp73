@@ -224,37 +224,26 @@
     }
 
     .hero-panel::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(180deg, rgba(42,33,25,0.05) 0%, rgba(42,33,25,0.56) 100%);
-    }
-
-    .hero-overlay {
-      position: absolute;
-      inset: auto 18px 18px 18px;
-      z-index: 1;
-      display: grid;
-      gap: 12px;
+      display: none;
     }
 
     .glass-card {
-      background: rgba(255, 255, 255, 0.72);
-      border: 1px solid rgba(255, 255, 255, 0.66);
-      backdrop-filter: blur(12px);
+      background: rgba(255, 255, 255, 0.82);
+      border: 1px solid rgba(232, 221, 208, 0.95);
+      backdrop-filter: blur(8px);
       border-radius: 20px;
-      padding: 16px 18px;
-      box-shadow: 0 14px 28px rgba(43, 34, 26, 0.12);
+      padding: 22px;
+      box-shadow: var(--shadow);
     }
 
     .glass-card h3 {
-      font-size: 14px;
-      margin-bottom: 6px;
+      font-size: 15px;
+      margin-bottom: 8px;
     }
 
     .glass-card p {
       font-size: 13px;
-      color: #594b3d;
+      color: var(--text-sub);
     }
 
     .grid-2 {
@@ -613,21 +602,22 @@
           <video autoplay loop muted playsinline>
             <source src="images/hero-dog.mp4" type="video/mp4">
           </video>
-          <div class="hero-overlay">
-            <div class="glass-card">
-              <h3>現場で止まらない運用</h3>
-              <p>犬の状態、繁殖予定、今日のタスク、引き継ぎメモを、スタッフ全員で同じ画面から確認できます。</p>
-            </div>
-            <div class="grid-2">
-              <div class="glass-card">
-                <h3>AI で記録補助</h3>
-                <p>自然文や音声から、記録・確認・検索をすばやく補助します。</p>
-              </div>
-              <div class="glass-card">
-                <h3>血縁・繁殖管理</h3>
-                <p>親子関係、配種、子代、産室の流れを見失いません。</p>
-              </div>
-            </div>
+        </div>
+      </div>
+
+      <div class="container" style="margin-top: 20px;">
+        <div class="card-grid">
+          <div class="glass-card">
+            <h3>🏠 現場で止まらない運用</h3>
+            <p>犬の状態、繁殖予定、今日のタスク、引き継ぎメモを、スタッフ全員で同じ画面から確認できます。</p>
+          </div>
+          <div class="glass-card">
+            <h3>🤖 AI で記録補助</h3>
+            <p>自然文や音声から、記録・確認・検索をすばやく補助します。</p>
+          </div>
+          <div class="glass-card">
+            <h3>🧬 血縁・繁殖管理</h3>
+            <p>親子関係、配種、子代、産室の流れを見失いません。</p>
           </div>
         </div>
       </div>
